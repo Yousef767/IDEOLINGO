@@ -162,7 +162,7 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-3xl lg:text-4xl font-bold  mb-4" text-secondary>Our Team</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold  mb-4 text-secondary" >Our Team</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Experts Who Speak Your Industry. Our team includes native-speaking translators, localization engineers,
               desktop publishing specialists, and experienced project managers.
