@@ -60,8 +60,8 @@ function Hero() {
           At Ideolingo, we transform your words into powerful messages that
           connect, engage, and convert in any market. With a team of expert
           linguists, project managers, and cultural consultants, we make sure
-          your brand sounds local—everywhere. From fast accurate translations
-          to complete localization strategies, we help you reach audiences
+          your brand sounds local—everywhere. From fast accurate translations to
+          complete localization strategies, we help you reach audiences
           worldwide.
         </motion.p>
 
@@ -74,7 +74,7 @@ function Hero() {
           <Link
             href="/contact"
             aria-label="Contact Ideolingo — let’s talk about your next project today"
-            className="rounded-md bg-white/10 px-5 py-3 text-base font-semibold text-white shadow-sm ring-1 ring-inset ring-white/20 hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
+            className="rounded-md bg-white/10 px-5 py-3 text-base font-semibold text-white shadow-sm ring-1 ring-inset ring-white/20 hover:bg-muted/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
           >
             Let’s talk about your next project today
           </Link>
@@ -99,7 +99,11 @@ function Section({
   className?: string;
 }) {
   return (
-    <section className={`${subdued ? "bg-gray-100" : "bg-white"} py-16 lg:py-20 ${className}`}>
+    <section
+      className={`${
+        subdued ? "bg-gray-100" : "bg-white"
+      } py-16 lg:py-20 ${className}`}
+    >
       <div className="container mx-auto px-4">
         {title ? (
           <motion.h2
@@ -123,12 +127,46 @@ function Section({
 //================================================================
 function Services() {
   const servicesList = [
-    { title: "Translation", description: "Accurate and culturally relevant translations for all content types.", href: "/services/translation", Icon: Languages },
-    { title: "Transcreation", description: "Creative adaptation of marketing messages to resonate with local audiences.", href: "/services/transcreation", Icon: Sparkles },
-    { title: "Interpretation", description: "Seamless consecutive and simultaneous interpretation services.", href: "/services/interpretation", Icon: Headphones },
-    { title: "Desktop Publishing (DTP)", description: "Formatting and layout design for multilingual documents.", href: "/services/dtp", Icon: LayoutGrid },
-    { title: "MT Post-Editing (MTPE)", description: "Human refinement of machine-translated content for quality.", href: "/services/mtpe", Icon: Bot },
-    { title: "Subtitling & Voice-over", description: "Engaging multimedia localization for a global viewership.", href: "/services/subtitling", Icon: Clapperboard },
+    {
+      title: "Translation",
+      description:
+        "Accurate and culturally relevant translations for all content types.",
+      href: "/services/translation",
+      Icon: Languages,
+    },
+    {
+      title: "Transcreation",
+      description:
+        "Creative adaptation of marketing messages to resonate with local audiences.",
+      href: "/services/transcreation",
+      Icon: Sparkles,
+    },
+    {
+      title: "Interpretation",
+      description:
+        "Seamless consecutive and simultaneous interpretation services.",
+      href: "/services/interpretation",
+      Icon: Headphones,
+    },
+    {
+      title: "Desktop Publishing (DTP)",
+      description: "Formatting and layout design for multilingual documents.",
+      href: "/services/dtp",
+      Icon: LayoutGrid,
+    },
+    {
+      title: "MT Post-Editing (MTPE)",
+      description:
+        "Human refinement of machine-translated content for quality.",
+      href: "/services/mtpe",
+      Icon: Bot,
+    },
+    {
+      title: "Subtitling & Voice-over",
+      description: "Engaging multimedia localization for a global viewership.",
+      href: "/services/subtitling",
+      Icon: Clapperboard,
+    },
   ];
 
   return (
@@ -149,8 +187,12 @@ function Services() {
                 <service.Icon className="h-7 w-7" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-white">{service.title}</h3>
-                <p className="mt-1 text-sm text-zinc-300">{service.description}</p>
+                <h3 className="text-lg font-semibold text-white">
+                  {service.title}
+                </h3>
+                <p className="mt-1 text-sm text-zinc-300">
+                  {service.description}
+                </p>
               </div>
             </div>
             <div className="mt-4 pt-4 border-t-white border-zinc-600">
@@ -175,13 +217,37 @@ function Services() {
 function Industries() {
   const industriesList = [
     { title: "Legal", href: "/industries/legal", Icon: Gavel },
-    { title: "Medical & Life Sciences", href: "/industries/medical-life-sciences", Icon: Stethoscope },
-    { title: "Finance & Banking", href: "/industries/finance-banking", Icon: Banknote },
+    {
+      title: "Medical & Life Sciences",
+      href: "/industries/medical-life-sciences",
+      Icon: Stethoscope,
+    },
+    {
+      title: "Finance & Banking",
+      href: "/industries/finance-banking",
+      Icon: Banknote,
+    },
     { title: "Technology & IT", href: "/industries/technology-it", Icon: Cpu },
-    { title: "E-commerce & Retail", href: "/industries/ecommerce-retail", Icon: ShoppingBag },
-    { title: "Marketing & Media", href: "/industries/marketing-media", Icon: Megaphone },
-    { title: "Manufacturing", href: "/industries/manufacturing-engineering", Icon: Factory },
-    { title: "E-learning", href: "/industries/education-elearning", Icon: GraduationCap },
+    {
+      title: "E-commerce & Retail",
+      href: "/industries/ecommerce-retail",
+      Icon: ShoppingBag,
+    },
+    {
+      title: "Marketing & Media",
+      href: "/industries/marketing-media",
+      Icon: Megaphone,
+    },
+    {
+      title: "Manufacturing",
+      href: "/industries/manufacturing-engineering",
+      Icon: Factory,
+    },
+    {
+      title: "E-learning",
+      href: "/industries/education-elearning",
+      Icon: GraduationCap,
+    },
     { title: "Automotive", href: "/industries/automotive", Icon: Car },
     { title: "Gaming", href: "/industries/gaming", Icon: Gamepad2 },
   ];
@@ -196,12 +262,17 @@ function Industries() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="group flex flex-col items-center gap-3 rounded-lg p-4 h-full hover:bg-gray-100 transition-colors duration-300"
+              className="group flex flex-col items-center gap-3 rounded-lg p-4 h-full transition-colors duration-300 bg-pin"
             >
-              <div className="grid h-14 w-14 place-items-center rounded-full bg-gray-200 text-gray-700 group-hover:bg-gray-300 transition-colors ic" style={{background:"rgba(253, 143, 143,.6)"}}>
+              <div
+                className="grid h-14 w-14 place-items-center rounded-full bg-gray-200 text-gray-700 group-hover:bg-gray-300 transition-colors ic"
+                style={{ background: "rgba(253, 143, 143,.6)" }}
+              >
                 <industry.Icon className="h-7 w-7" />
               </div>
-              <h3 className="text-sm font-medium text-primary">{industry.title}</h3>
+              <h3 className="text-sm font-medium text-primary">
+                {industry.title}
+              </h3>
             </motion.div>
           </Link>
         ))}

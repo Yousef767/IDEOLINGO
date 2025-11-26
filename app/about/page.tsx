@@ -74,7 +74,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="mt-6 flex flex-wrap gap-3 md:justify-start justify-center">
-                  <Button asChild size="lg" className="bg-zinc-700 text-white">
+                  <Button asChild size="lg" className="flex bg-zinc-700 text-white">
                     <Link href="/contact">Discover how our story can help yours</Link>
                   </Button>
                   <Button asChild variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-100">
@@ -196,7 +196,7 @@ export default function AboutPage() {
           </div>
 
           <div className="text-center">
-            <Button asChild size="lg" className="bg-zinc-700 text-white">
+            <Button asChild size="lg" className=" bg-zinc-700 text-white hover:bg-dark">
               <Link href="/contact">Meet the people who make it happen</Link>
             </Button>
           </div>
