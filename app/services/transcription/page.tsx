@@ -6,7 +6,7 @@ import { CheckCircle2, Lock, UserCheck, Award, FileCog, UploadCloud, PencilLine,
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 
-const Accent = "#fff";
+const Accent = "#C51431";
 
 // I've created a new Bullet component to accept custom icons
 const IconBullet = ({ icon: Icon, children }: { icon: React.ElementType, children: React.ReactNode }) => (
@@ -109,8 +109,7 @@ export default function TranscriptionPage() {
             <Button
               asChild
               size="lg"
-              className="border-0"
-              style={{ backgroundColor: Accent, color: "#ffffffff" }}
+              className="border-0 bg-white hover:bg-white"
             >
               <Link href="/contact">Request Transcription</Link>
             </Button>

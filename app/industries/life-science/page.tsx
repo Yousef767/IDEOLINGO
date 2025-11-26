@@ -67,7 +67,7 @@ export default function LifeSciencePage() {
             {/* Why Accuracy Matters Section */}
             <Section>
                 <div className="max-w-4xl mx-auto text-center">
-                    <Microscope size={48} className="mx-auto mb-4" style={{ color: Accent }} />
+                    <Microscope size={48} className="mx-auto mb-4" style={{ color: "#C51431" }} />
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Accuracy Matters in Life Science</h2>
                     <p className="text-gray-700 leading-relaxed">
                         Even a single mistranslation in life science content can lead to regulatory

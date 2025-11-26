@@ -6,7 +6,7 @@ import { Bot, UserCheck, BadgeCheck, Zap, Award } from "lucide-react";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 
-const Accent = "#fff";
+const Accent = "#C51431";
 
 export default function MTPEPage() {
   return (
@@ -100,8 +100,7 @@ export default function MTPEPage() {
             <Button
               asChild
               size="lg"
-              className="border-0"
-              style={{ backgroundColor: Accent, color: "#ffffffff" }}
+            className="border-0 bg-white hover:bg-white"
             >
               <Link href="/contact">Request MTPE Options</Link>
             </Button>
