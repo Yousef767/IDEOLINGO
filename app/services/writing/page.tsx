@@ -15,7 +15,7 @@ import {
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 
-const Accent = "#fff";
+const Accent = "#C51431";
 
 // A component for bullets with custom icons
 const IconBullet = ({ icon: Icon, children }: { icon: React.ElementType, children: React.ReactNode }) => (
@@ -110,8 +110,7 @@ export default function WritingServicesPage() {
             <Button
               asChild
               size="lg"
-              className="border-0"
-              style={{ backgroundColor: Accent, color: "#ffffffff" }}
+              className="border-0 bg-white hover:bg-white"
             >
               <Link href="/contact">Start Your Writing Project</Link>
             </Button>

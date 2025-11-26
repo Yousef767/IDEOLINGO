@@ -464,7 +464,7 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-zinc-800 hover:bg-zinc-700 btn"
+                    className="w-full bg-zinc-700 btn"
                     disabled={loading}
                   >
                     <Send className="mr-2 h-5 w-5" />

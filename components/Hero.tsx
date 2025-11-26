@@ -26,7 +26,7 @@ export default function Hero({
 
   return (
     <section className={`relative ${heightClass} overflow-hidden`}>
-      <div className="absolute inset-0 -z-50" style={{ background: "linear-gradient(180deg, #C51431 0%, #C51431 55%, #C51431 100%)" }} />
+      <div className="absolute inset-0 -z-50" style={{ background: "linear-gradient(to right,rgb(252, 73, 73),#C51431 ,#761222)" }} />
       <AuroraRibbons />
       <SoftFog />
       <SkewLines />

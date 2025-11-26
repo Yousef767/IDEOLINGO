@@ -159,12 +159,15 @@
 .ic2 svg {
   stroke: var(--primary);
 }
+
 .ic2 path {
   stroke: var(--primary);
 }
+
 .ic2 rect {
   stroke: var(--primary);
 }
+
 .ic2 circle {
   stroke: var(--primary);
 }
@@ -182,8 +185,18 @@
 .btn {
   background-color: var(--primary);
   color: #fff !important;
+  cursor: pointer;
 }
 
 button.btn svg path {
   stroke: #fff;
+}
+
+.text-sec,.text-secondary,.text-gray-900 {
+  background: -webkit-linear-gradient(45deg ,var(--primary) 50%, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-primary,.bg-zinc-700{
+    background: -webkit-linear-gradient(45deg ,var(--primary), #761222);
 }

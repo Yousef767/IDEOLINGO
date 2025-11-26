@@ -100,8 +100,7 @@ export default function ProofreadingEditingPage() {
             <Button
               asChild
               size="lg"
-              className="border-0"
-              style={{ backgroundColor: Accent, color: "#ffffffff" }}
+                className="border-0 bg-white hover:bg-white"
             >
               <Link href="/contact">Perfect Your Content</Link>
             </Button>

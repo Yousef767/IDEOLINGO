@@ -246,7 +246,7 @@ function CallToAction() {
           <Link
             href="/contact"
             aria-label="Contact Ideolingo — let’s talk about your next project today"
-            className="rounded-md bg-white px-5 py-3 text-base font-semibold text-gray-900 shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
+            className="rounded-md bg-white px-5 py-3 text-base font-semibold shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
           >
             Let’s talk about your next project today
           </Link>
